@@ -6,32 +6,32 @@ const TableContent = (props) => {
     
     let data = props.items;
     return(
-        <Table dataTest="dhis2-uicore-table">
-            <TableHead dataTest="dhis2-uicore-tablehead">
-                 <TableRowHead dataTest="dhis2-uicore-tablerowhead">
-                     <TableCellHead dataTest="dhis2-uicore-tablecellhead">Key</TableCellHead>
-                     <TableCellHead dataTest="dhis2-uicore-tablecellhead">Value</TableCellHead>
+        <Table>
+            <TableHead>
+                 <TableRowHead>
+                     <TableCellHead>Key</TableCellHead>
+                     <TableCellHead>Value</TableCellHead>
                  </TableRowHead>
             </TableHead>
-            <TableBody dataTest="dhis2-uicore-tablebody">
-                <TableRow dataTest="dhis2-uicore-tablerow">
-                    <TableCell dataTest="dhis2-uicore-tablecell">
+            <TableBody>
+                <TableRow>
+                    <TableCell>
                         id
                     </TableCell>
                     <TableCell dataTest="details-id">
                         {data.id}
                     </TableCell>
                 </TableRow>
-                <TableRow dataTest="dhis2-uicore-tablerow">
-                    <TableCell dataTest="dhis2-uicore-tablecell">
+                <TableRow>
+                    <TableCell>
                         name
                     </TableCell>
                     <TableCell dataTest="details-name">
                         {data.name}
                     </TableCell>
                 </TableRow>
-                <TableRow dataTest="dhis2-uicore-tablerow">
-                    <TableCell dataTest="dhis2-uicore-tablecell">
+                <TableRow>
+                    <TableCell>
                         created
                     </TableCell>
                     <TableCell dataTest="details-created">

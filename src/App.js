@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
 import i18n from '@dhis2/d2-i18n'
 import { Menu, MenuItem, MenuSectionHeader } from '@dhis2/ui'
-import { useDataQuery } from "@dhis2/app-runtime"
-import TableContent from './TableContent'
+import React, { useState, useEffect } from 'react'
 import styles from './App.module.css'
+import TableContent from './TableContent'
+import { useDataQuery } from "@dhis2/app-runtime"
+
 
 const MyApp = () => {
     let programsData = useDataQuery(programs).data;
